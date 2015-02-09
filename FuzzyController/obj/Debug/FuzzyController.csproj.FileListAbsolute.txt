@@ -1,0 +1,9 @@
+c:\users\administrator\documents\visual studio 2013\Projects\FuzzyController\FuzzyController\bin\Debug\FuzzyController.exe.config
+c:\users\administrator\documents\visual studio 2013\Projects\FuzzyController\FuzzyController\bin\Debug\FuzzyController.exe
+c:\users\administrator\documents\visual studio 2013\Projects\FuzzyController\FuzzyController\bin\Debug\FuzzyController.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\FuzzyController\FuzzyController\obj\Debug\FuzzyController.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2013\Projects\FuzzyController\FuzzyController\obj\Debug\FuzzyController.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2013\Projects\FuzzyController\FuzzyController\obj\Debug\FuzzyController.csproj.GenerateResource.Cache
+c:\users\administrator\documents\visual studio 2013\Projects\FuzzyController\FuzzyController\obj\Debug\FuzzyController.exe
+c:\users\administrator\documents\visual studio 2013\Projects\FuzzyController\FuzzyController\obj\Debug\FuzzyController.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\FuzzyController\FuzzyController\obj\Debug\FuzzyController.UI.resources

@@ -1,0 +1,12 @@
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\FuzzyController\FuzzyBase\bin\Debug\FuzzyBase.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\FuzzyController\FuzzyBase\bin\Debug\FuzzyBase.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\FuzzyController\FuzzyBase\bin\Debug\FuzzyBase.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\FuzzyController\FuzzyBase\obj\Debug\Fuzzyfication.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\FuzzyController\FuzzyBase\obj\Debug\FuzzyBase.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\FuzzyController\FuzzyBase\obj\Debug\FuzzyBase.pdb
+D:\trabajo\Tarea\FuzzyLogic\FuzzyBase\bin\Debug\FuzzyBase.dll.config
+D:\trabajo\Tarea\FuzzyLogic\FuzzyBase\bin\Debug\FuzzyBase.dll
+D:\trabajo\Tarea\FuzzyLogic\FuzzyBase\bin\Debug\FuzzyBase.pdb
+D:\trabajo\Tarea\FuzzyLogic\FuzzyBase\obj\Debug\Fuzzyfication.csprojResolveAssemblyReference.cache
+D:\trabajo\Tarea\FuzzyLogic\FuzzyBase\obj\Debug\FuzzyBase.dll
+D:\trabajo\Tarea\FuzzyLogic\FuzzyBase\obj\Debug\FuzzyBase.pdb
