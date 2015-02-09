@@ -17,6 +17,35 @@ namespace FuzzyController
         public UI()
         {
             InitializeComponent();
+            
+            //Add Validated textboxes to Obj
+            /*
+            list.Add(txtFrioA);
+            list.Add(txtFrioB);
+            list.Add(txtFrioC);
+
+            list.Add(txtTempladoA);
+            list.Add(txtTempladoB);
+            list.Add(txtTempladoC);
+            list.Add(txtTempladoD);
+
+            list.Add(txtCalienteA);
+            list.Add(txtCalienteB);
+            list.Add(txtCalienteC);
+
+            list.Add(txtLentoA);
+            list.Add(txtLentoB);
+            list.Add(txtLentoC);
+
+            list.Add(txtMedioA);
+            list.Add(txtMedioB);
+            list.Add(txtMedioC);
+            list.Add(txtMedioD);
+
+            list.Add(txtRapidoA);
+            list.Add(txtRapidoB);
+            list.Add(txtRapidoC);
+            */
         }
 
         private void UI_Load(object sender, EventArgs e)
@@ -69,8 +98,7 @@ namespace FuzzyController
 
         private void btnEvaluate_Click(object sender, EventArgs e)
         {
-            
+            // TODO: Evaluate methods goes here...
         }
-
     }
 }

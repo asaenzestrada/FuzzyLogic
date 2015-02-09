@@ -10,7 +10,7 @@ namespace FuzzyBase
     {
         protected double xVert, aVert, bVert, cVert, dVert, membershipGrade;
 
-        public abstract void evaluateMembership();    
+        public abstract void evaluateMembership();
     
     }
 }

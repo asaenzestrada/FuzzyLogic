@@ -14,7 +14,7 @@ namespace FuzzyController
         /// 
 
         public static UI UserInteface;
-
+        
         [STAThread]
         static void Main()
         {

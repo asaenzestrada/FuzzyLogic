@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication1
+namespace FuzzyController
 {
-    class Program
+    class controller
     {
-        static void Main(string[] args)
-        {
-        }
+
     }
 }
