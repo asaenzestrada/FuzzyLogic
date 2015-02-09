@@ -36,26 +36,26 @@
             this.tabTemp = new System.Windows.Forms.TabPage();
             this.label44 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.txtTempladoC = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txtTempladoD = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.txtTempladoB = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
             this.txtTempladoA = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtCalienteD = new System.Windows.Forms.TextBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtCalienteC = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
             this.txtCalienteB = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
             this.txtCalienteA = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -190,16 +190,13 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.label21);
             this.groupBox3.Controls.Add(this.txtTempladoC);
-            this.groupBox3.Controls.Add(this.label22);
-            this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Controls.Add(this.txtTempladoD);
             this.groupBox3.Controls.Add(this.label12);
+            this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.txtTempladoB);
-            this.groupBox3.Controls.Add(this.label19);
             this.groupBox3.Controls.Add(this.txtTempladoA);
             this.groupBox3.Controls.Add(this.label20);
             this.groupBox3.Location = new System.Drawing.Point(6, 91);
@@ -209,10 +206,19 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Templado (Trapezoidal)";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(191, 29);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(73, 13);
+            this.label9.TabIndex = 34;
+            this.label9.Text = "Punto máximo";
+            // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(483, 31);
+            this.label21.Location = new System.Drawing.Point(520, 29);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(18, 13);
             this.label21.TabIndex = 33;
@@ -220,37 +226,28 @@
             // 
             // txtTempladoC
             // 
-            this.txtTempladoC.Location = new System.Drawing.Point(409, 27);
+            this.txtTempladoC.Location = new System.Drawing.Point(450, 25);
             this.txtTempladoC.Name = "txtTempladoC";
             this.txtTempladoC.Size = new System.Drawing.Size(68, 20);
             this.txtTempladoC.TabIndex = 31;
             // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(347, 27);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(59, 13);
-            this.label22.TabIndex = 32;
-            this.label22.Text = "Fin Estable";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(654, 31);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(18, 13);
-            this.label9.TabIndex = 30;
-            this.label9.Text = "ºC";
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(323, 30);
+            this.label10.Location = new System.Drawing.Point(337, 28);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(18, 13);
             this.label10.TabIndex = 29;
             this.label10.Text = "ºC";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(368, 29);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(76, 13);
+            this.label12.TabIndex = 9;
+            this.label12.Text = "Límite superior";
             // 
             // label11
             // 
@@ -261,37 +258,12 @@
             this.label11.TabIndex = 28;
             this.label11.Text = "ºC";
             // 
-            // txtTempladoD
-            // 
-            this.txtTempladoD.Location = new System.Drawing.Point(584, 28);
-            this.txtTempladoD.Name = "txtTempladoD";
-            this.txtTempladoD.Size = new System.Drawing.Size(68, 20);
-            this.txtTempladoD.TabIndex = 26;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(502, 28);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(76, 13);
-            this.label12.TabIndex = 27;
-            this.label12.Text = "Límite superior";
-            // 
             // txtTempladoB
             // 
-            this.txtTempladoB.Location = new System.Drawing.Point(253, 26);
+            this.txtTempladoB.Location = new System.Drawing.Point(267, 24);
             this.txtTempladoB.Name = "txtTempladoB";
             this.txtTempladoB.Size = new System.Drawing.Size(68, 20);
             this.txtTempladoB.TabIndex = 24;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(191, 26);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(56, 13);
-            this.label19.TabIndex = 25;
-            this.label19.Text = "Ini Estable";
             // 
             // txtTempladoA
             // 
@@ -311,13 +283,16 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label39);
+            this.groupBox2.Controls.Add(this.label17);
+            this.groupBox2.Controls.Add(this.txtCalienteD);
+            this.groupBox2.Controls.Add(this.label45);
+            this.groupBox2.Controls.Add(this.label16);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.txtCalienteC);
-            this.groupBox2.Controls.Add(this.label16);
             this.groupBox2.Controls.Add(this.txtCalienteB);
-            this.groupBox2.Controls.Add(this.label17);
             this.groupBox2.Controls.Add(this.txtCalienteA);
             this.groupBox2.Controls.Add(this.label18);
             this.groupBox2.Location = new System.Drawing.Point(6, 166);
@@ -327,10 +302,53 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Caliente (Triángular)";
             // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(654, 28);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(18, 13);
+            this.label39.TabIndex = 36;
+            this.label39.Text = "ºC";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(347, 28);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(59, 13);
+            this.label17.TabIndex = 34;
+            this.label17.Text = "Fin Estable";
+            // 
+            // txtCalienteD
+            // 
+            this.txtCalienteD.Location = new System.Drawing.Point(584, 25);
+            this.txtCalienteD.Name = "txtCalienteD";
+            this.txtCalienteD.Size = new System.Drawing.Size(68, 20);
+            this.txtCalienteD.TabIndex = 34;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(502, 25);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(76, 13);
+            this.label45.TabIndex = 35;
+            this.label45.Text = "Límite superior";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(191, 29);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(56, 13);
+            this.label16.TabIndex = 34;
+            this.label16.Text = "Ini Estable";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(520, 28);
+            this.label6.Location = new System.Drawing.Point(483, 29);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(18, 13);
             this.label6.TabIndex = 21;
@@ -339,7 +357,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(337, 29);
+            this.label7.Location = new System.Drawing.Point(323, 32);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(18, 13);
             this.label7.TabIndex = 20;
@@ -356,35 +374,17 @@
             // 
             // txtCalienteC
             // 
-            this.txtCalienteC.Location = new System.Drawing.Point(450, 25);
+            this.txtCalienteC.Location = new System.Drawing.Point(409, 25);
             this.txtCalienteC.Name = "txtCalienteC";
             this.txtCalienteC.Size = new System.Drawing.Size(68, 20);
             this.txtCalienteC.TabIndex = 17;
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(368, 25);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(76, 13);
-            this.label16.TabIndex = 18;
-            this.label16.Text = "Límite superior";
-            // 
             // txtCalienteB
             // 
-            this.txtCalienteB.Location = new System.Drawing.Point(267, 25);
+            this.txtCalienteB.Location = new System.Drawing.Point(253, 25);
             this.txtCalienteB.Name = "txtCalienteB";
             this.txtCalienteB.Size = new System.Drawing.Size(68, 20);
             this.txtCalienteB.TabIndex = 15;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(191, 25);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(73, 13);
-            this.label17.TabIndex = 16;
-            this.label17.Text = "Punto máximo";
             // 
             // txtCalienteA
             // 
@@ -457,7 +457,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(368, 19);
+            this.label5.Location = new System.Drawing.Point(368, 22);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(76, 13);
             this.label5.TabIndex = 9;
@@ -932,36 +932,15 @@
         private System.Windows.Forms.TabPage tabTemp;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox txtTempladoC;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox txtTempladoD;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txtTempladoB;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox txtTempladoA;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtCalienteC;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox txtCalienteB;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txtCalienteA;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox txtFrioC;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtFrioB;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtFrioA;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TabPage tabSpeed;
@@ -1006,6 +985,27 @@
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Button btnRestoreDefaults;
         private System.Windows.Forms.Button btnEvaluate;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox txtTempladoC;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtTempladoB;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtCalienteC;
+        private System.Windows.Forms.TextBox txtCalienteB;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtFrioC;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtFrioB;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox txtCalienteD;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label12;
     }
 }
 

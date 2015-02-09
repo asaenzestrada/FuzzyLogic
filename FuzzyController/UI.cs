@@ -59,17 +59,17 @@ namespace FuzzyController
             
             /*Set temperature values*/
             txtFrioA.Text = "0";
-            txtFrioB.Text = "9";
-            txtFrioC.Text = "15";
+            txtFrioB.Text = "0";
+            txtFrioC.Text = "11";
 
-            txtTempladoA.Text = "12";
+            txtTempladoA.Text = "9";
             txtTempladoB.Text = "18";
-            txtTempladoC.Text = "22";
-            txtTempladoD.Text = "27";
+            txtTempladoC.Text = "25";
 
-            txtCalienteA.Text = "24";
-            txtCalienteB.Text = "30";
+            txtCalienteA.Text = "18";
+            txtCalienteB.Text = "27";
             txtCalienteC.Text = "35";
+            txtCalienteD.Text = "40";
 
             /*Set speed values*/
             txtLentoA.Text = "300";
@@ -98,7 +98,53 @@ namespace FuzzyController
 
         private void btnEvaluate_Click(object sender, EventArgs e)
         {
-            // TODO: Evaluate methods goes here...
+            //Cold membership
+            
+            //cast values...
+            double input;
+            double fa;
+            double fb;
+            double fc;
+            
+            double.TryParse(txtInputTemp.Text, out input);
+            double.TryParse(txtFrioA.Text, out fa);
+            double.TryParse(txtFrioB.Text, out fb);
+            double.TryParse(txtFrioC.Text, out fc);
+
+            TriangularMembership cold = new TriangularMembership(input, fa, fb, fc);
+
+
+            //warm membership
+            double ta;
+            double tb;
+            double tc;
+            
+            double.TryParse(txtTempladoA.Text, out ta);
+            double.TryParse(txtTempladoB.Text, out tb);
+            double.TryParse(txtTempladoC.Text, out tc);
+
+            TriangularMembership warm = new TriangularMembership(input, ta, tb, tc);
+
+            
+            //Hot membership
+            double wa;
+            double wb;
+            double wc;
+            double wd;
+
+            double.TryParse(txtCalienteA.Text, out wa);
+            double.TryParse(txtCalienteB.Text, out wb);
+            double.TryParse(txtCalienteC.Text, out wc);
+            double.TryParse(txtCalienteD.Text, out wd);
+
+
+            TrapezoidalMembership hot = new TrapezoidalMembership(input, wa, wb, wc, wd);
+
+
+            //Display values to the breakdown
+            textBox3.Text = cold.membershipGrade.ToString();
+            textBox2.Text = warm.membershipGrade.ToString();
+            textBox1.Text = hot.membershipGrade.ToString();
         }
     }
 }

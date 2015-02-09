@@ -7,6 +7,5 @@ C:\Users\Administrator\Documents\Visual Studio 2013\Projects\FuzzyController\Fuz
 D:\trabajo\Tarea\FuzzyLogic\FuzzyBase\bin\Debug\FuzzyBase.dll.config
 D:\trabajo\Tarea\FuzzyLogic\FuzzyBase\bin\Debug\FuzzyBase.dll
 D:\trabajo\Tarea\FuzzyLogic\FuzzyBase\bin\Debug\FuzzyBase.pdb
-D:\trabajo\Tarea\FuzzyLogic\FuzzyBase\obj\Debug\Fuzzyfication.csprojResolveAssemblyReference.cache
 D:\trabajo\Tarea\FuzzyLogic\FuzzyBase\obj\Debug\FuzzyBase.dll
 D:\trabajo\Tarea\FuzzyLogic\FuzzyBase\obj\Debug\FuzzyBase.pdb

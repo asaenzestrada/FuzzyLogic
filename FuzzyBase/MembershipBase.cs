@@ -8,9 +8,20 @@ namespace FuzzyBase
 {
     public abstract class MembershipBase
     {
-        protected double xVert, aVert, bVert, cVert, dVert, membershipGrade;
+        public double input, xVert, aVert, bVert, cVert, dVert, membershipGrade, eval;
 
         public abstract void evaluateMembership();
-    
+
+        protected void greaterAsmallerB()
+        {
+            this.membershipGrade = (this.input - this.aVert) / (this.bVert - this.aVert);
+        }
+
+        public abstract void greaterBsmallerC();
+
+        protected void greaterCsmallerD()
+        {
+            this.membershipGrade = (this.dVert - this.input) / (this.dVert - this.cVert);
+        }
     }
 }
