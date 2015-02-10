@@ -26,7 +26,7 @@ namespace FuzzyBase
 
         public override void evaluateMembership()
         {
-            if (this.input <= this.aVert || this.input >= this.cVert)
+            if ((this.input <= this.aVert && aVert != 0) || this.input >= this.cVert)
             {
                 this.membershipGrade = 0;
                 return;

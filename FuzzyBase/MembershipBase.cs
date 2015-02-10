@@ -8,7 +8,7 @@ namespace FuzzyBase
 {
     public abstract class MembershipBase
     {
-        public double input, xVert, aVert, bVert, cVert, dVert, membershipGrade, eval;
+        public double input, xVert, aVert, bVert, cVert, dVert, membershipGrade;
 
         public abstract void evaluateMembership();
 

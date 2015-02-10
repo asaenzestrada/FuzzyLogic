@@ -17,35 +17,6 @@ namespace FuzzyController
         public UI()
         {
             InitializeComponent();
-            
-            //Add Validated textboxes to Obj
-            /*
-            list.Add(txtFrioA);
-            list.Add(txtFrioB);
-            list.Add(txtFrioC);
-
-            list.Add(txtTempladoA);
-            list.Add(txtTempladoB);
-            list.Add(txtTempladoC);
-            list.Add(txtTempladoD);
-
-            list.Add(txtCalienteA);
-            list.Add(txtCalienteB);
-            list.Add(txtCalienteC);
-
-            list.Add(txtLentoA);
-            list.Add(txtLentoB);
-            list.Add(txtLentoC);
-
-            list.Add(txtMedioA);
-            list.Add(txtMedioB);
-            list.Add(txtMedioC);
-            list.Add(txtMedioD);
-
-            list.Add(txtRapidoA);
-            list.Add(txtRapidoB);
-            list.Add(txtRapidoC);
-            */
         }
 
         private void UI_Load(object sender, EventArgs e)
@@ -58,8 +29,8 @@ namespace FuzzyController
             txtInputTemp.Text = "27";
             
             /*Set temperature values*/
-            txtFrioA.Text = "0";
-            txtFrioB.Text = "0";
+            txtFrioA.Text = "0.1";
+            txtFrioB.Text = "5";
             txtFrioC.Text = "11";
 
             txtTempladoA.Text = "9";
@@ -98,15 +69,19 @@ namespace FuzzyController
 
         private void btnEvaluate_Click(object sender, EventArgs e)
         {
-            //Cold membership
-            
-            //cast values...
+            evaluateMe();
+        }
+
+        protected void evaluateMe()
+        {
             double input;
+            double.TryParse(txtInputTemp.Text, out input);
+
+            //Cold membership
             double fa;
             double fb;
             double fc;
-            
-            double.TryParse(txtInputTemp.Text, out input);
+
             double.TryParse(txtFrioA.Text, out fa);
             double.TryParse(txtFrioB.Text, out fb);
             double.TryParse(txtFrioC.Text, out fc);
@@ -118,14 +93,14 @@ namespace FuzzyController
             double ta;
             double tb;
             double tc;
-            
+
             double.TryParse(txtTempladoA.Text, out ta);
             double.TryParse(txtTempladoB.Text, out tb);
             double.TryParse(txtTempladoC.Text, out tc);
 
             TriangularMembership warm = new TriangularMembership(input, ta, tb, tc);
 
-            
+
             //Hot membership
             double wa;
             double wb;
@@ -137,11 +112,10 @@ namespace FuzzyController
             double.TryParse(txtCalienteC.Text, out wc);
             double.TryParse(txtCalienteD.Text, out wd);
 
-
             TrapezoidalMembership hot = new TrapezoidalMembership(input, wa, wb, wc, wd);
 
 
-            //Display values to the breakdown
+            //Display values breakdown
             textBox3.Text = cold.membershipGrade.ToString();
             textBox2.Text = warm.membershipGrade.ToString();
             textBox1.Text = hot.membershipGrade.ToString();

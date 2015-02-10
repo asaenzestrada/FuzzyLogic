@@ -61,13 +61,10 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.txtFrioC = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtFrioB = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtFrioA = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.tabSpeed = new System.Windows.Forms.TabPage();
             this.label43 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -110,6 +107,9 @@
             this.label31 = new System.Windows.Forms.Label();
             this.btnRestoreDefaults = new System.Windows.Forms.Button();
             this.btnEvaluate = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtFrioA = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabTemp.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -204,7 +204,7 @@
             this.groupBox3.Size = new System.Drawing.Size(675, 56);
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Templado (Trapezoidal)";
+            this.groupBox3.Text = "Templado (Triángular)";
             // 
             // label9
             // 
@@ -300,7 +300,7 @@
             this.groupBox2.Size = new System.Drawing.Size(675, 56);
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Caliente (Triángular)";
+            this.groupBox2.Text = "Caliente (Trapezoidal)";
             // 
             // label39
             // 
@@ -404,15 +404,15 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.txtFrioA);
+            this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.txtFrioC);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.txtFrioB);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtFrioA);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(6, 19);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(675, 56);
@@ -423,7 +423,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(520, 22);
+            this.label15.Location = new System.Drawing.Point(520, 30);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(18, 13);
             this.label15.TabIndex = 12;
@@ -432,24 +432,15 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(337, 23);
+            this.label14.Location = new System.Drawing.Point(337, 31);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(18, 13);
             this.label14.TabIndex = 11;
             this.label14.Text = "ºC";
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(167, 23);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(18, 13);
-            this.label13.TabIndex = 10;
-            this.label13.Text = "ºC";
-            // 
             // txtFrioC
             // 
-            this.txtFrioC.Location = new System.Drawing.Point(450, 19);
+            this.txtFrioC.Location = new System.Drawing.Point(450, 27);
             this.txtFrioC.Name = "txtFrioC";
             this.txtFrioC.Size = new System.Drawing.Size(68, 20);
             this.txtFrioC.TabIndex = 8;
@@ -457,7 +448,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(368, 22);
+            this.label5.Location = new System.Drawing.Point(368, 30);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(76, 13);
             this.label5.TabIndex = 9;
@@ -465,7 +456,7 @@
             // 
             // txtFrioB
             // 
-            this.txtFrioB.Location = new System.Drawing.Point(267, 19);
+            this.txtFrioB.Location = new System.Drawing.Point(267, 27);
             this.txtFrioB.Name = "txtFrioB";
             this.txtFrioB.Size = new System.Drawing.Size(68, 20);
             this.txtFrioB.TabIndex = 6;
@@ -473,27 +464,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(191, 19);
+            this.label2.Location = new System.Drawing.Point(191, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 13);
             this.label2.TabIndex = 7;
             this.label2.Text = "Punto máximo";
-            // 
-            // txtFrioA
-            // 
-            this.txtFrioA.Location = new System.Drawing.Point(96, 19);
-            this.txtFrioA.Name = "txtFrioA";
-            this.txtFrioA.Size = new System.Drawing.Size(68, 20);
-            this.txtFrioA.TabIndex = 4;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 19);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Límite inferior";
             // 
             // tabSpeed
             // 
@@ -880,6 +855,31 @@
             this.btnEvaluate.UseVisualStyleBackColor = true;
             this.btnEvaluate.Click += new System.EventHandler(this.btnEvaluate_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(167, 31);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(18, 13);
+            this.label3.TabIndex = 31;
+            this.label3.Text = "ºC";
+            // 
+            // txtFrioA
+            // 
+            this.txtFrioA.Location = new System.Drawing.Point(96, 27);
+            this.txtFrioA.Name = "txtFrioA";
+            this.txtFrioA.Size = new System.Drawing.Size(68, 20);
+            this.txtFrioA.TabIndex = 29;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(20, 27);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(70, 13);
+            this.label13.TabIndex = 30;
+            this.label13.Text = "Límite inferior";
+            // 
             // UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -940,9 +940,6 @@
         private System.Windows.Forms.TextBox txtCalienteA;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox txtFrioA;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TabPage tabSpeed;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.GroupBox groupBox4;
@@ -1006,6 +1003,9 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtFrioA;
+        private System.Windows.Forms.Label label13;
     }
 }
 
