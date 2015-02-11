@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FuzzyBase;
+using Inference;
 
 namespace FuzzyController
 {
@@ -119,6 +120,45 @@ namespace FuzzyController
             textBox3.Text = cold.membershipGrade.ToString();
             textBox2.Text = warm.membershipGrade.ToString();
             textBox1.Text = hot.membershipGrade.ToString();
+
+            //// INFERENCE /////
+
+            InferenceBase inference = new InferenceBase(cold.membershipGrade, warm.membershipGrade, hot.membershipGrade);
+
+            double muCold, muWarm, muHot;
+
+            muCold = inference.muCold;
+            muWarm = inference.muWarm;
+            muHot = inference.muHot;
+
+            double sa, sb, sc;
+
+            double.TryParse(txtLentoA.Text, out sa);
+            double.TryParse(txtLentoB.Text, out sb);
+            double.TryParse(txtLentoC.Text, out sc);
+
+            ITriangularMembership slow = new ITriangularMembership(muCold, sa, sb, sc);
+
+            double ma, mb, mc, md;
+
+            double.TryParse(txtMedioA.Text, out ma);
+            double.TryParse(txtMedioB.Text, out mb);
+            double.TryParse(txtMedioC.Text, out mc);
+            double.TryParse(txtMedioD.Text, out md);
+
+            ITrapezoidalMembership mid = new ITrapezoidalMembership(muWarm, ma, mb, mc, md);
+
+            double Fa, Fb, Fc;
+
+            double.TryParse(txtRapidoA.Text, out Fa);
+            double.TryParse(txtRapidoB.Text, out Fb);
+            double.TryParse(txtRapidoC.Text, out Fc);
+
+            ITriangularMembership fast = new ITriangularMembership(muHot, Fa, Fb, Fc);
+
+            Lento.Text = slow.rpm.ToString();
+            Medio.Text = mid.rpm.ToString();
+            Alto.Text = fast.rpm.ToString();
         }
     }
 }

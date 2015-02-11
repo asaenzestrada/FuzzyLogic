@@ -59,6 +59,9 @@
             this.txtCalienteA = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtFrioA = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.txtFrioC = new System.Windows.Forms.TextBox();
@@ -93,11 +96,11 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.Alto = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.Medio = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.Lento = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
@@ -107,9 +110,6 @@
             this.label31 = new System.Windows.Forms.Label();
             this.btnRestoreDefaults = new System.Windows.Forms.Button();
             this.btnEvaluate = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtFrioA = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabTemp.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -141,7 +141,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(469, 445);
+            this.label4.Location = new System.Drawing.Point(427, 445);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(99, 13);
             this.label4.TabIndex = 7;
@@ -150,9 +150,9 @@
             // txtOutRPM
             // 
             this.txtOutRPM.Enabled = false;
-            this.txtOutRPM.Location = new System.Drawing.Point(574, 445);
+            this.txtOutRPM.Location = new System.Drawing.Point(526, 445);
             this.txtOutRPM.Name = "txtOutRPM";
-            this.txtOutRPM.Size = new System.Drawing.Size(100, 20);
+            this.txtOutRPM.Size = new System.Drawing.Size(148, 20);
             this.txtOutRPM.TabIndex = 6;
             // 
             // tabControl1
@@ -419,6 +419,31 @@
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Frío (Triángular)";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(167, 31);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(18, 13);
+            this.label3.TabIndex = 31;
+            this.label3.Text = "ºC";
+            // 
+            // txtFrioA
+            // 
+            this.txtFrioA.Location = new System.Drawing.Point(96, 27);
+            this.txtFrioA.Name = "txtFrioA";
+            this.txtFrioA.Size = new System.Drawing.Size(68, 20);
+            this.txtFrioA.TabIndex = 29;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(20, 27);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(70, 13);
+            this.label13.TabIndex = 30;
+            this.label13.Text = "Límite inferior";
             // 
             // label15
             // 
@@ -720,11 +745,11 @@
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.textBox4);
+            this.groupBox7.Controls.Add(this.Alto);
             this.groupBox7.Controls.Add(this.label32);
-            this.groupBox7.Controls.Add(this.textBox5);
+            this.groupBox7.Controls.Add(this.Medio);
             this.groupBox7.Controls.Add(this.label33);
-            this.groupBox7.Controls.Add(this.textBox6);
+            this.groupBox7.Controls.Add(this.Lento);
             this.groupBox7.Controls.Add(this.label37);
             this.groupBox7.Controls.Add(this.textBox1);
             this.groupBox7.Controls.Add(this.label26);
@@ -739,12 +764,12 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Grados de membresía";
             // 
-            // textBox4
+            // Alto
             // 
-            this.textBox4.Location = new System.Drawing.Point(387, 57);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(68, 20);
-            this.textBox4.TabIndex = 23;
+            this.Alto.Location = new System.Drawing.Point(387, 57);
+            this.Alto.Name = "Alto";
+            this.Alto.Size = new System.Drawing.Size(68, 20);
+            this.Alto.TabIndex = 23;
             // 
             // label32
             // 
@@ -755,12 +780,12 @@
             this.label32.TabIndex = 24;
             this.label32.Text = "Alto";
             // 
-            // textBox5
+            // Medio
             // 
-            this.textBox5.Location = new System.Drawing.Point(231, 57);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(68, 20);
-            this.textBox5.TabIndex = 21;
+            this.Medio.Location = new System.Drawing.Point(231, 57);
+            this.Medio.Name = "Medio";
+            this.Medio.Size = new System.Drawing.Size(68, 20);
+            this.Medio.TabIndex = 21;
             // 
             // label33
             // 
@@ -771,12 +796,12 @@
             this.label33.TabIndex = 22;
             this.label33.Text = "Medio";
             // 
-            // textBox6
+            // Lento
             // 
-            this.textBox6.Location = new System.Drawing.Point(60, 57);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(68, 20);
-            this.textBox6.TabIndex = 19;
+            this.Lento.Location = new System.Drawing.Point(60, 57);
+            this.Lento.Name = "Lento";
+            this.Lento.Size = new System.Drawing.Size(68, 20);
+            this.Lento.TabIndex = 19;
             // 
             // label37
             // 
@@ -854,31 +879,6 @@
             this.btnEvaluate.Text = "Evaluar";
             this.btnEvaluate.UseVisualStyleBackColor = true;
             this.btnEvaluate.Click += new System.EventHandler(this.btnEvaluate_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(167, 31);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(18, 13);
-            this.label3.TabIndex = 31;
-            this.label3.Text = "ºC";
-            // 
-            // txtFrioA
-            // 
-            this.txtFrioA.Location = new System.Drawing.Point(96, 27);
-            this.txtFrioA.Name = "txtFrioA";
-            this.txtFrioA.Size = new System.Drawing.Size(68, 20);
-            this.txtFrioA.TabIndex = 29;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(20, 27);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(70, 13);
-            this.label13.TabIndex = 30;
-            this.label13.Text = "Límite inferior";
             // 
             // UI
             // 
@@ -968,11 +968,11 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox Alto;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox Medio;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox Lento;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label26;

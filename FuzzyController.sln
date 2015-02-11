@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuzzyLogic", "FuzzyControll
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fuzzyfication", "FuzzyBase\Fuzzyfication.csproj", "{E485428E-6C9C-49A7-B66F-2DD16EAA3B05}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inference", "Inference\Inference.csproj", "{180FBD29-C708-445B-B259-0E7E6DF56121}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E485428E-6C9C-49A7-B66F-2DD16EAA3B05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E485428E-6C9C-49A7-B66F-2DD16EAA3B05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E485428E-6C9C-49A7-B66F-2DD16EAA3B05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{180FBD29-C708-445B-B259-0E7E6DF56121}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{180FBD29-C708-445B-B259-0E7E6DF56121}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{180FBD29-C708-445B-B259-0E7E6DF56121}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{180FBD29-C708-445B-B259-0E7E6DF56121}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

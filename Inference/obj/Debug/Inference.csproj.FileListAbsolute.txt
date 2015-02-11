@@ -1,0 +1,4 @@
+D:\trabajo\Tarea\FuzzyLogic\Inference\bin\Debug\Inference.dll
+D:\trabajo\Tarea\FuzzyLogic\Inference\bin\Debug\Inference.pdb
+D:\trabajo\Tarea\FuzzyLogic\Inference\obj\Debug\Inference.dll
+D:\trabajo\Tarea\FuzzyLogic\Inference\obj\Debug\Inference.pdb

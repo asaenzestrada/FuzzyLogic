@@ -20,3 +20,5 @@ D:\trabajo\Tarea\FuzzyLogic\FuzzyController\bin\Debug\FuzzyLogic.pdb
 D:\trabajo\Tarea\FuzzyLogic\FuzzyController\bin\Debug\FuzzyBase.dll
 D:\trabajo\Tarea\FuzzyLogic\FuzzyController\bin\Debug\FuzzyBase.pdb
 D:\trabajo\Tarea\FuzzyLogic\FuzzyController\obj\Debug\FuzzyLogic.csprojResolveAssemblyReference.cache
+D:\trabajo\Tarea\FuzzyLogic\FuzzyController\bin\Debug\Inference.dll
+D:\trabajo\Tarea\FuzzyLogic\FuzzyController\bin\Debug\Inference.pdb
