@@ -26,18 +26,18 @@ namespace FuzzyBase
 
         public override void evaluateMembership()
         {
-            if ((this.input <= this.aVert && aVert != 0) || this.input >= this.cVert)
+            if ((this.input <= this.aVert && aVert != 0) && this.input >= this.cVert)
             {
                 this.membershipGrade = 0;
                 return;
             }
 
-            if (this.input >= this.bVert || input <= this.cVert && this.membershipGrade == 0)
+            if ((this.input >= this.bVert && input <= this.cVert) && this.membershipGrade == 0)
             {
                 greaterBsmallerC();
             }
 
-            if (this.input >= this.aVert || input <= this.bVert && this.membershipGrade == 0)
+            if ((this.input >= this.aVert && input <= this.bVert) && this.membershipGrade == 0)
             {
                 greaterAsmallerB();
             }

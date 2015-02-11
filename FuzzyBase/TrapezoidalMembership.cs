@@ -28,23 +28,23 @@ namespace FuzzyBase
 
         public override void evaluateMembership()
         {
-            if ((this.input <= this.aVert && aVert != 0) || this.input >= this.dVert) // if is out of the function's range it has no membership.
+            if ((this.input <= this.aVert && aVert != 0) && this.input >= this.dVert) // if is out of the function's range it has no membership.
             {
                 this.membershipGrade = 0;
                 return;
             }
 
-            if (this.input >= this.cVert || input <= this.dVert && this.membershipGrade == 0)
+            if ((this.input >= this.cVert && input <= this.dVert) && this.membershipGrade == 0)
             {
                 greaterCsmallerD();
             } 
 
-            if (this.input >= this.bVert || input <= this.cVert && this.membershipGrade == 0)
+            if ((this.input >= this.bVert && input <= this.cVert) && this.membershipGrade == 0)
             {
                 greaterBsmallerC();
             }
 
-            if (this.input >= this.aVert || input <= this.bVert && this.membershipGrade == 0)
+            if ((this.input >= this.aVert && input <= this.bVert) && this.membershipGrade == 0)
             {
                 greaterAsmallerB();
             }

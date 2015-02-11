@@ -12,7 +12,6 @@ C:\Users\Administrator\Documents\Visual Studio 2013\Projects\FuzzyController\Fuz
 D:\trabajo\Tarea\FuzzyLogic\FuzzyController\bin\Debug\FuzzyLogic.exe.config
 D:\trabajo\Tarea\FuzzyLogic\FuzzyController\obj\Debug\FuzzyLogic.exe
 D:\trabajo\Tarea\FuzzyLogic\FuzzyController\obj\Debug\FuzzyLogic.pdb
-D:\trabajo\Tarea\FuzzyLogic\FuzzyController\obj\Debug\FuzzyLogic.csprojResolveAssemblyReference.cache
 D:\trabajo\Tarea\FuzzyLogic\FuzzyController\obj\Debug\FuzzyController.UI.resources
 D:\trabajo\Tarea\FuzzyLogic\FuzzyController\obj\Debug\FuzzyController.Properties.Resources.resources
 D:\trabajo\Tarea\FuzzyLogic\FuzzyController\obj\Debug\FuzzyLogic.csproj.GenerateResource.Cache
@@ -20,3 +19,4 @@ D:\trabajo\Tarea\FuzzyLogic\FuzzyController\bin\Debug\FuzzyLogic.exe
 D:\trabajo\Tarea\FuzzyLogic\FuzzyController\bin\Debug\FuzzyLogic.pdb
 D:\trabajo\Tarea\FuzzyLogic\FuzzyController\bin\Debug\FuzzyBase.dll
 D:\trabajo\Tarea\FuzzyLogic\FuzzyController\bin\Debug\FuzzyBase.pdb
+D:\trabajo\Tarea\FuzzyLogic\FuzzyController\obj\Debug\FuzzyLogic.csprojResolveAssemblyReference.cache
