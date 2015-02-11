@@ -16,35 +16,13 @@ namespace Inference
             this.bVert = b;
             this.cVert = c;
 
-            evaluateMembership();
+            evaluate();
         }
 
-        public override void greaterBsmallerC()
+        public override void evaluate()
         {
-            this.rpm = cVert - (input * (cVert - bVert));
+            za = (input * (bVert - aVert)) + aVert;
+            zb = cVert - (input * (cVert - bVert));
         }
-
-        public override void evaluateMembership()
-        {
-            if ((this.input <= this.aVert && aVert != 0) && this.input >= this.cVert)
-            {
-                this.rpm = 0;
-                return;
-            }
-
-            if ((this.input >= this.bVert && input <= this.cVert) && this.rpm == 0)
-            {
-                greaterBsmallerC();
-            }
-
-            if ((this.input >= this.aVert && input <= this.bVert) && this.rpm == 0)
-            {
-                greaterAsmallerB();
-            }
-        }
-
-
     }
-
-    
 }

@@ -8,9 +8,10 @@ namespace Inference
 {
     public class InferenceBase
     {
-        public double muCold, muWarm, muHot;
-
-        public double rpmSlow, rpmMid, rpmFast;
+        public double muCold, muWarm, muHot, rpmSlow, rpmMid, rpmFast, 
+                        limitCa, limitCb, limitWa, limitWb, limitHa, limitHb, 
+                        result, 
+                        aClause, bClause, cClause;
 
         public InferenceBase(double muC, double muW, double muH)
         {
@@ -37,6 +38,15 @@ namespace Inference
             {
                 rpmFast = muHot;
             }
+        }
+
+        public void defuzzyfication()
+        {
+            aClause = (muCold * limitCa) + (muCold * limitCb);
+            bClause = (muWarm * limitWa) + (muWarm * limitWb);
+            cClause = (muHot * limitHa) + (muHot * limitHb);
+
+            result = (aClause + bClause + cClause) / 2*(muCold + muWarm + muHot);
         }
     }
 }

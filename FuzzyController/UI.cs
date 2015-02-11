@@ -156,9 +156,11 @@ namespace FuzzyController
 
             ITriangularMembership fast = new ITriangularMembership(muHot, Fa, Fb, Fc);
 
+            /*
             Lento.Text = slow.rpm.ToString();
             Medio.Text = mid.rpm.ToString();
             Alto.Text = fast.rpm.ToString();
+            */
         }
     }
 }

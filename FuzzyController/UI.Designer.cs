@@ -96,12 +96,6 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.Alto = new System.Windows.Forms.TextBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.Medio = new System.Windows.Forms.TextBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.Lento = new System.Windows.Forms.TextBox();
-            this.label37 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -141,7 +135,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(427, 445);
+            this.label4.Location = new System.Drawing.Point(421, 402);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(99, 13);
             this.label4.TabIndex = 7;
@@ -150,7 +144,7 @@
             // txtOutRPM
             // 
             this.txtOutRPM.Enabled = false;
-            this.txtOutRPM.Location = new System.Drawing.Point(526, 445);
+            this.txtOutRPM.Location = new System.Drawing.Point(520, 402);
             this.txtOutRPM.Name = "txtOutRPM";
             this.txtOutRPM.Size = new System.Drawing.Size(148, 20);
             this.txtOutRPM.TabIndex = 6;
@@ -737,7 +731,7 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(679, 448);
+            this.label25.Location = new System.Drawing.Point(673, 405);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(31, 13);
             this.label25.TabIndex = 15;
@@ -745,12 +739,6 @@
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.Alto);
-            this.groupBox7.Controls.Add(this.label32);
-            this.groupBox7.Controls.Add(this.Medio);
-            this.groupBox7.Controls.Add(this.label33);
-            this.groupBox7.Controls.Add(this.Lento);
-            this.groupBox7.Controls.Add(this.label37);
             this.groupBox7.Controls.Add(this.textBox1);
             this.groupBox7.Controls.Add(this.label26);
             this.groupBox7.Controls.Add(this.textBox2);
@@ -759,58 +747,10 @@
             this.groupBox7.Controls.Add(this.label31);
             this.groupBox7.Location = new System.Drawing.Point(27, 327);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(675, 92);
+            this.groupBox7.Size = new System.Drawing.Size(675, 58);
             this.groupBox7.TabIndex = 18;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Grados de membresía";
-            // 
-            // Alto
-            // 
-            this.Alto.Location = new System.Drawing.Point(387, 57);
-            this.Alto.Name = "Alto";
-            this.Alto.Size = new System.Drawing.Size(68, 20);
-            this.Alto.TabIndex = 23;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(332, 57);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(25, 13);
-            this.label32.TabIndex = 24;
-            this.label32.Text = "Alto";
-            // 
-            // Medio
-            // 
-            this.Medio.Location = new System.Drawing.Point(231, 57);
-            this.Medio.Name = "Medio";
-            this.Medio.Size = new System.Drawing.Size(68, 20);
-            this.Medio.TabIndex = 21;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(155, 57);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(36, 13);
-            this.label33.TabIndex = 22;
-            this.label33.Text = "Medio";
-            // 
-            // Lento
-            // 
-            this.Lento.Location = new System.Drawing.Point(60, 57);
-            this.Lento.Name = "Lento";
-            this.Lento.Size = new System.Drawing.Size(68, 20);
-            this.Lento.TabIndex = 19;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(20, 60);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(34, 13);
-            this.label37.TabIndex = 20;
-            this.label37.Text = "Lento";
             // 
             // textBox1
             // 
@@ -862,7 +802,7 @@
             // 
             // btnRestoreDefaults
             // 
-            this.btnRestoreDefaults.Location = new System.Drawing.Point(27, 445);
+            this.btnRestoreDefaults.Location = new System.Drawing.Point(21, 402);
             this.btnRestoreDefaults.Name = "btnRestoreDefaults";
             this.btnRestoreDefaults.Size = new System.Drawing.Size(215, 23);
             this.btnRestoreDefaults.TabIndex = 19;
@@ -872,7 +812,7 @@
             // 
             // btnEvaluate
             // 
-            this.btnEvaluate.Location = new System.Drawing.Point(248, 445);
+            this.btnEvaluate.Location = new System.Drawing.Point(242, 402);
             this.btnEvaluate.Name = "btnEvaluate";
             this.btnEvaluate.Size = new System.Drawing.Size(78, 23);
             this.btnEvaluate.TabIndex = 20;
@@ -884,7 +824,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(719, 474);
+            this.ClientSize = new System.Drawing.Size(719, 435);
             this.Controls.Add(this.btnEvaluate);
             this.Controls.Add(this.btnRestoreDefaults);
             this.Controls.Add(this.groupBox7);
@@ -968,12 +908,6 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.TextBox Alto;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox Medio;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox Lento;
-        private System.Windows.Forms.Label label37;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TextBox textBox2;
